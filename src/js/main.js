@@ -1,48 +1,48 @@
-﻿
 var flag1=0,flag2=0,flag3=0;
-$('#home').hover(function(){
+
+$('#m1').hover(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 0');				  
 						  },function(){	
 						  if (flag1==0) {
 	$(this).css('background','url("img/left-menu.gif") -115px 0');				  
 						  }
 });
-$('#prev').hover(function(){
+$('#m2').hover(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 -115px');				  
 						  },function(){	
 						  if (flag2==0) {
 	$(this).css('background','url("img/left-menu.gif") -115px -115px');				  
 						  }
 });
-$('#next').hover(function(){
+$('#m3').hover(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 -230px');				  
 						  },function(){	if (flag3==0) {					  
 	$(this).css('background','url("img/left-menu.gif") -115px -230px');				  
 						  }
 });
 
-$('#home').click(function(){
+$('#m1').click(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 0');
 	flag1=1;
 	flag2=0;
 	flag3=0;
-	$('#prev').css('background','url("img/left-menu.gif") -115px -115px');				  
-	$('#next').css('background','url("img/left-menu.gif") -115px -230px');					  
+	$('#m2').css('background','url("img/left-menu.gif") -115px -115px');				  
+	$('#m3').css('background','url("img/left-menu.gif") -115px -230px');					  
 });
-$('#prev').click(function(){
+$('#m2').click(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 -115px');
 	flag1=0;
 	flag2=1;
 	flag3=0;
-	$('#home').css('background','url("img/left-menu.gif") -115px 0');				  
-	$('#next').css('background','url("img/left-menu.gif") -115px -230px');					  
+	$('#m1').css('background','url("img/left-menu.gif") -115px 0');				  
+	$('#m3').css('background','url("img/left-menu.gif") -115px -230px');					  
 });
 
-$('#next').click(function(){
+$('#m3').click(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 -230px');		
 	flag1=0;
 	flag2=0;
 	flag3=1;
-	$('#home').css('background','url("img/left-menu.gif") -115px 0');				  
-	$('#prev').css('background','url("img/left-menu.gif") -115px -115px');					  
+	$('#m1').css('background','url("img/left-menu.gif") -115px 0');				  
+	$('#m2').css('background','url("img/left-menu.gif") -115px -115px');					  
 });
