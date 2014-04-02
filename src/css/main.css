@@ -102,7 +102,7 @@ textarea {
 #header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x ;}
 #header {height: 49px; position:fixed; width: 982px;}
 #logo {margin: 12px 0 0 15px;}
-#footer {height: 35px; font-size:12px;}
+#footer {height: 35px; font-size:12px; margin-bottom:20px;}
 #copyright {float:left; margin: 10px 0 0 15px;}
 #design {float:right; margin: 10px 15px 0 0;}
 #design .d1 {padding: 1px 4px; background-color:#757575; color:#FFFFFF;}
@@ -137,8 +137,8 @@ h1 strong {font-size: 19px; padding-bottom: 10px; font-weight:normal}
 
 #buy {text-decoration: none;font-size:13.5px; margin-left:885px; margin-top:7px; padding:6px 5px 6px 5px; border:1px solid #C4007A; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; 
 background-color:#C4007A; position:absolute; color:#FFFFFF;}
-#buyblock{display:none; font-size:20px; position:fixed; margin-left : 812px; margin-top:50px; width:170px; height:200px; border:1px solid grey; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color:#FFFFFF;}
-#buyblock{text-align:center;}
+#buyblock{display:none; font-size:16px; position:fixed; margin-left : 612px; margin-top:50px; width:370px; height:200px; border:1px solid grey; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color:#FFFFFF; line-height:1.8; z-index:100;}
+
 
 a.section {padding-bottom: 70px;display:block;}
 
