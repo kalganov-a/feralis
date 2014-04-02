@@ -99,8 +99,8 @@ textarea {
 
 
 #wrapper {width: 982px; margin: 0 auto;}
-#header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x;}
-#header {height: 50px; position:fixed; width: 982px;}
+#header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x ;}
+#header {height: 49px; position:fixed; width: 982px;}
 #logo {margin: 12px 0 0 15px;}
 #footer {height: 35px; font-size:12px;}
 #copyright {float:left; margin: 10px 0 0 15px;}
@@ -109,9 +109,8 @@ textarea {
 #design .d2 {padding: 1px 4px; background-color:#424242; color:#FFFFFF;}
 
 #nav {position:fixed; top:70px; width:111px;}
-#n1, #n2 {text-align:center; text-transform: uppercase;} 
-#n1 {font-size: 14px;}
-#n2 {font-size: 19px; padding-bottom: 10px;}
+h1 {text-align:center; text-transform: uppercase; font-weight:normal; font-size: 14px; padding: 0px 0px 10px 0px; margin: 0} 
+h1 strong {font-size: 19px; padding-bottom: 10px; font-weight:normal}
 
 #nav ul, #nav li {margin:0; padding:0;} 
 #nav li {list-style:none; top:0;}
@@ -123,31 +122,74 @@ textarea {
 
 
 
-#page1 {padding-left: 150px;}
+#page1, #page2, #page3 {padding-left: 150px;}
+
+#page1 h2, #page2 h2 ,#page3 h2{text-align:center; font-size: 2.5em; padding: 0px 0px 10px 0px; margin: 0; font-weight:normal; line-height: 1.0;}
+#page1 h2 p, #page2 h2 p,#page3 h2 p {font-size: 0.8em; color: #6d6d6d; padding: 0px 0px 10px 0px; margin: 0 0}
+#page2 h2{color: #ef7000;}
+#page1 h2{ color: #DDB000;}
+#page3 h2{color: #00b2ef;}
+.boxes .lb, .boxes .rb {width: 385px; border:2px solid #cecece; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; padding:5px; height: 170px;} 
+.rb{float:right;text-align:center;}
+.lb{text-align:center;}
+
+.Txt_1{text-align:center; line-height: 0.3; font-family:Verdana, Arial, Helvetica, sans-serif; color:#4a4b49;}
+
+#buy {text-decoration: none;font-size:13.5px; margin-left:885px; margin-top:7px; padding:6px 5px 6px 5px; border:1px solid #C4007A; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; 
+background-color:#C4007A; position:absolute; color:#FFFFFF;}
+#buyblock{display:none; font-size:20px; position:fixed; margin-left : 812px; margin-top:50px; width:170px; height:200px; border:1px solid grey; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color:#FFFFFF;}
+#buyblock{text-align:center;}
 
 a.section {padding-bottom: 70px;display:block;}
 
+#udl_1-1{margin-left:200px;}		
+#udl_1-2{margin-left:200px;}
 
 
+/*#BotBut1 li{display:inline;}*/
+.BottomButtons {/*text-align:center;*/}
+#BotBut1 li,#BotBut2 li,#BotBut3 li {display:inline;}
+#BotBut1 a,#BotBut2 a,#BotBut3 a { padding:40px 50px; }
+.bb_1{margin-left:42px; }
+#bb1_1{background:url('../img/1-sizes.gif') 0 0;}
+#bb2_1{background:url('../img/1-sizes.gif') -110px 100px;}
+#bb3_1{background:url('../img/1-sizes.gif') -220px 100px;}
+#bb4_1{background:url('../img/1-sizes.gif') -330px 100px;}
+#bb5_1{background:url('../img/1-sizes.gif') -440px 100px;}
+.i{ text-align:center;}
+#bb1_2{background:url('../img/2-sizes.gif') 0 100px;}
+#bb2_2{background:url('../img/2-sizes.gif') -110px 0;}
+#bb3_2{background:url('../img/2-sizes.gif') -220px 100px;}
+#bb4_2{background:url('../img/2-sizes.gif') -330px 100px;}
+#bb5_2{background:url('../img/2-sizes.gif') -440px 100px;}
 
-
-
-
-
+#bb1_3{background:url('../img/3-sizes.gif') 0 100px;}
+#bb2_3{background:url('../img/3-sizes.gif') 0 100px;}
+#bb3_3{background:url('../img/3-sizes.gif') -220px 0;}
+#bb2_3, #bb3_3{ margin-left:42px;}
+#bb1_3{margin-left:184px;}
+#text1, #text2, #text3{ position: absolute; font-size:17px;line-height: 0.2; padding-bottom:0px; margin-bottom:0px; font-family: Geneva, Arial, Helvetica, sans-serif;}
+#text1,#text3{margin-left:470px; margin-top:290px;}
+#text2{margin-left:465px; margin-top:294px; color: #ef7000;}
+#text2 p{ font-size:20px; text-align:center;}
+#ImgSmall{  margin-left:110px; line-height:0;position:absolute;}
+#text1{color: #DDB000;  }
+#text3{color: #00b2ef;}
+#text1 li span, #text2 li span, #text3 li span, #text2 p{color: #999999; }
 
 /* ==========================================================================
    Helper classes
-   ========================================================================== */
+   ========================================================================== 
 
-/*
+
  * Image replacement
- */
+ 
 
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    /* IE 6/7 fallback */
+     IE 6/7 fallback 
     *text-indent: -9999px;
 }
 
@@ -158,18 +200,18 @@ a.section {padding-bottom: 70px;display:block;}
     height: 150%;
 }
 
-/*
+
  * Hide from both screenreaders and browsers: h5bp.com/u
- */
+ 
 
 .hidden {
     display: none !important;
     visibility: hidden;
 }
 
-/*
+
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
+ 
 
 .visuallyhidden {
     border: 0;
@@ -182,10 +224,10 @@ a.section {padding-bottom: 70px;display:block;}
     width: 1px;
 }
 
-/*
+
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
- */
+ 
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -197,15 +239,15 @@ a.section {padding-bottom: 70px;display:block;}
     width: auto;
 }
 
-/*
+
  * Hide visually and from screenreaders, but maintain layout
- */
+ 
 
 .invisible {
     visibility: hidden;
 }
 
-/*
+
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -215,53 +257,53 @@ a.section {padding-bottom: 70px;display:block;}
  *    that receive the `clearfix` class.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
- */
+ 
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";  1 
+    display: table;  2 
 }
 
 .clearfix:after {
     clear: both;
 }
 
-/*
+
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
- */
+ 
 
 .clearfix {
     *zoom: 1;
 }
 
-/* ==========================================================================
+ ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+   ========================================================================== 
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+     Style adjustments for viewports that meet the condition 
 }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+     Style adjustments for high resolution devices 
 }
 
-/* ==========================================================================
+ ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+   ========================================================================== 
 
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important;  Black prints faster: h5bp.com/s 
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -279,9 +321,9 @@ a.section {padding-bottom: 70px;display:block;}
         content: " (" attr(title) ")";
     }
 
-    /*
+    
      * Don't show links for images, or javascript/internal links
-     */
+     
 
     .ir a:after,
     a[href^="javascript:"]:after,
@@ -296,7 +338,7 @@ a.section {padding-bottom: 70px;display:block;}
     }
 
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group;  h5bp.com/t */
     }
 
     tr,
