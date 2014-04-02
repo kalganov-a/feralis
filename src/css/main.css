@@ -99,7 +99,7 @@ textarea {
 
 
 #wrapper {width: 982px; margin: 0 auto;}
-#header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x ;}
+#header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x ; z-index:90;}
 #header {height: 49px; position:fixed; width: 982px;}
 #logo {margin: 12px 0 0 15px;}
 #footer {height: 35px; font-size:12px; margin-bottom:20px;}
