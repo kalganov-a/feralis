@@ -1,32 +1,26 @@
-
-var hide=false;
 var flag1=1,flag2=0,flag3=0;
 var color=1;
 var ChSize1_1=1,ChSize2_1=0,ChSize3_1=0,ChSize4_1=0,ChSize5_1=0,ChSize1_2=0,ChSize2_2=1,ChSize3_2=0,ChSize4_2=0,ChSize5_2=0,ChSize1_3=0,ChSize2_3=0,ChSize3_3=1;
 var NowPict1='img/1-10.jpg',NowPict2='img/2-20.jpg',NowPict3='img/3-30.jpg';
+alert('asdfa');
 
-
-
-
-
-
-$('#m1').hover(function(){
+/*$('#m1').hover(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 0');				  
 						  },function(){	
-						  if (flag1==0) {
+						  if (flag1==1) {
 	$(this).css('background','url("img/left-menu.gif") -115px 0');				  
 						  }
 });
 $('#m2').hover(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 -115px');				  
 						  },function(){	
-						  if (flag2==0) {
+						  if (flag2==2) {
 	$(this).css('background','url("img/left-menu.gif") -115px -115px');				  
 						  }
 });
 $('#m3').hover(function(){
 	$(this).css('background','url("img/left-menu.gif") 0 -230px');				  
-						  },function(){	if (flag3==0) {					  
+						  },function(){	if (flag3==3) {					  
 	$(this).css('background','url("img/left-menu.gif") -115px -230px');				  
 						  }
 });
@@ -69,17 +63,8 @@ $ ('#buy').click(function(){
 		$(this).css('background','#C4007A');
 		$(this).css('color','white');
 	}
-	
-	$('#AroundBuyB').toggle(),('slow');
-	$('#buyblock').toggle(),('slow');
+	$('#buyblock').toggle().slow;
 	                  	  });
-$('#AroundBuyB').click(function(){
-								color=1;
-								$('#buy').css('background','#C4007A');
-								$('#buy').css('color','white');
-								$('#buyblock').hide(),('slow');
-								$(this).hide(),('slow');
-								});
 
 $ ('#buy').hover(function(){		  
 				$(this).css('background','#B73386');	
@@ -264,18 +249,16 @@ $('#bb2_2').click(function(){
 });
 
 $('#bb3_2').click(function(){
-   	$(this).css('background','url("img/2-sizes.gif") -160px 0');
-	$('#img2').attr('src', 'img/2-30.jpg');
-	
-/*    $('#img2').attr('src', $('#img2').attr('src').replace(NowPict2, 'img/2-30.jpg')); */
+	$('#img2').attr('src', $('#img2').attr('src').replace(NowPict2, 'img/2-30.jpg')); 
 	NowPict2='img/2-30.jpg';					
+	$(this).css('background','url("img/2-sizes.gif") -160px 0');	
 	ChSize1_2=0;
 	ChSize2_2=0;
 	ChSize3_2=1;
 	ChSize4_2=0;
 	ChSize5_2=0;
+	$('#bb2_2').css('background','url("img/2-sizes.gif") -80px 74x');				  
 	$('#bb1_2').css('background','url("img/2-sizes.gif") 0 74px');
-	$('#bb2_2').css('background','url("img/2-sizes.gif") -80px 74px');
 	$('#bb4_2').css('background','url("img/2-sizes.gif") -240px 74px');
 	$('#bb5_2').css('background','url("img/2-sizes.gif") -320px 74px');
 });
@@ -358,4 +341,4 @@ $('#bb3_3').click(function(){
 	ChSize3_3=1;
 	$('#bb2_3').css('background','url("img/3-sizes.gif") -80px 74px');
 	$('#bb1_3').css('background','url("img/3-sizes.gif") 0 74px');
-	});
+	});*/
