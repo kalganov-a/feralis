@@ -98,8 +98,9 @@ textarea {
    ========================================================================== */
 
 
+
 #wrapper {width: 982px; margin: 0 auto;}
-#header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x ; z-index:150;}
+#header, #footer {border:1px solid #e8e8e8; border-radius:6px; background:url(../img/bg.gif) repeat-x ; z-index:150; -webkit-transform:  translateZ(0)}
 #header {height: 49px; position:fixed; width: 982px;}
 #logo {margin: 12px 0 0 15px;}
 #footer {height: 35px; font-size:12px; margin-bottom:20px;  z-index:150;}
@@ -108,7 +109,8 @@ textarea {
 #design .d1 {padding: 1px 4px; background-color:#757575; color:#FFFFFF;}
 #design .d2 {padding: 1px 4px; background-color:#424242; color:#FFFFFF;}
 
-#nav {position:fixed; top:70px; width:111px;}
+
+#nav {position:fixed; top:70px; width:111px; -webkit-transform:  translateZ(0)}
 h1 {text-align:center; text-transform: uppercase; font-weight:normal; font-size: 14px; padding: 0px 0px 10px 0px; margin: 0} 
 h1 strong {font-size: 19px; padding-bottom: 10px; font-weight:normal}
 
@@ -138,7 +140,7 @@ h1 strong {font-size: 19px; padding-bottom: 10px; font-weight:normal}
 #buy {text-decoration: none;font-size:13.5px; margin-left:885px; margin-top:7px; padding:6px 5px 6px 5px; border:1px solid #C4007A; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; 
 background-color:#C4007A; position:absolute; color:#FFFFFF; z-index:150;}
 
-#AroundBuyB{display:none; position:fixed; width:100%; height:100%; background-color: white; z-index:100; opacity: 0.8;}
+#AroundBuyB{display:none; position:fixed; width:100%; height:100%; background-color: white; z-index:100; opacity: 0.8; margin-left:0;}
 #buyblock{display:none; font-size:16px; position:fixed; margin-left : 612px; margin-top:50px; width:370px; height:200px; border:1px solid grey; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color:#FFFFFF; line-height:1.8; z-index:150;}
 a.section {padding-bottom: 70px;display:block;}
 
@@ -154,30 +156,34 @@ a.section {padding-bottom: 70px;display:block;}
 .BottomButtons a { padding:27px 36px; margin: 0 10px;}
 .bb_1{margin-left:20px; }
 #bb1_1{background:url('../img/1-sizes.gif') 0 0;}
-#bb2_1{background:url('../img/1-sizes.gif') -80px 74px;}
-#bb3_1{background:url('../img/1-sizes.gif') -160px 74px;}
-#bb4_1{background:url('../img/1-sizes.gif') -240px 74px;}
-#bb5_1{background:url('../img/1-sizes.gif') -320px 74px;}
+#bb1_2{background:url('../img/1-sizes.gif') -80px 74px;}
+#bb1_3{background:url('../img/1-sizes.gif') -160px 74px;}
+#bb1_4{background:url('../img/1-sizes.gif') -240px 74px;}
+#bb1_5{background:url('../img/1-sizes.gif') -320px 74px;}
 .i{ text-align:center; padding: 20px 0 50px 0;}
-#bb1_2{background:url('../img/2-sizes.gif') 0 74px;}
+#bb2_1{background:url('../img/2-sizes.gif') 0 74px;}
 #bb2_2{background:url('../img/2-sizes.gif') -80px 0;}
-#bb3_2{background:url('../img/2-sizes.gif') -160px 74px;}
-#bb4_2{background:url('../img/2-sizes.gif') -240px 74px;}
-#bb5_2{background:url('../img/2-sizes.gif') -320px 74px;}
+#bb2_3{background:url('../img/2-sizes.gif') -160px 74px;}
+#bb2_4{background:url('../img/2-sizes.gif') -240px 74px;}
+#bb2_5{background:url('../img/2-sizes.gif') -320px 74px;}
 
-#bb1_3{background:url('../img/3-sizes.gif') 0 74px;}
-#bb2_3{background:url('../img/3-sizes.gif') -80px 74px;}
+#bb3_1{background:url('../img/3-sizes.gif') 0 74px;}
+#bb3_2{background:url('../img/3-sizes.gif') -80px 74px;}
 #bb3_3{background:url('../img/3-sizes.gif') -160px 0;}
 
-#text1, #text2, #text3{ position: absolute; font-size:14px;line-height: 0.2; padding-bottom:0px; margin-bottom:0px; font-family: Geneva, Arial, Helvetica, sans-serif;}
+#text1, #text2, #text3{ position: absolute; padding-bottom:0px; margin-bottom:0px; font-family: Geneva, Arial, Helvetica, sans-serif; }
 #text1,#text3{margin-left:470px; margin-top:250px;}
-#text2{margin-left:470px; margin-top:230px; color: #ef7000; text-align:center; }
-#text3 p{ font-size:14px;}
+#text2{margin-left:470px; margin-top:230px; color: #ef7000; text-align:center;}
+#text2 li{ width:100px; }
+#text3 p{ margin-top:0;}
+#text3 { width:335px; }
 #text3 p{ text-align:center;}
-#text1{color: #DDB000;  }
-#text3{color: #00b2ef;}
+#text1 li{ width:283px; }
+#text1{color: #DDB000;}
+#text3{color: #00b2ef; margin-bottom:0; line-height:0.3}
 #text1 li span, #text2 li span, #text3 li span, #text3 p{color: #999999; }
-
+#text1 ul li{ width:294px; }
+#text3 li{ width:335px;}
 
 
 #text22 {position: absolute; margin-left:650px; margin-top:150px; text-align:center; color: #999999;}
@@ -187,6 +193,8 @@ font-style: italic;
 	font-size: 15px;
 	font-family: arial, sans-serif;
 }
+
+
 
 /* ==========================================================================
    Helper classes
